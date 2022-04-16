@@ -14,9 +14,9 @@
     ```python3
     Seleccione una Opcion  
 
-    1- Agregar Elementos a la pila  
-    2-Mostrar elementos de la pila  
-    3-Comparar elementos de la pila  
+    1- Agregar Elementos a la pila
+    2-Comparar elementos de la pila  
+    3-Mostrar elementos de la pila  
     4-Eliminar elemento de la pila  
     5-Salir   
     ```    
