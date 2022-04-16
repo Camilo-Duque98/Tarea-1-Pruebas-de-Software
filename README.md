@@ -1,7 +1,10 @@
 # Tarea-1-Pruebas-de-Software  
 ## Nombre: Camilo Villar  
 ## Rol: 201873096-3
-
+  
+# Descripción:  
+Este programa agrega una cadena de caracteres en forma de pila, es decir "el primer elemento que ingresa a la pila, es el ultimo en ser eliminado". Nos dará la facilidad de comparar dos carácteres entre sí, y ver si son iguales o no.  
+De manera opcional, se podrá ver la pila y eliminar elementos de ella.
 
     
 # Funcionamiento del programa    
