@@ -6,10 +6,10 @@ def Stack():
     global pila
     word=input("Ingrese una palabra: ")
     if word in pila:
-        logging.info(time.strftime('%H:%M:%S',time.localtime())+": Entrada "+word +" Valor obtenido")
+        logging.info(time.strftime('%H:%M:%S',time.localtime())+": Entrada "+word +" no permitida, ya que se encuentra.")
     else:
         pila.append(word)
-        logging.info(time.strftime('%H:%M:%S',time.localtime())+": Entrada "+word+" no permitido" )
+        logging.info(time.strftime('%H:%M:%S',time.localtime())+": Entrada "+word+", valor obtenido.")
 
 def Show():
 
@@ -29,7 +29,7 @@ def Compare():
     if word1 == word2:
         
         if word1 in pila :
-
+            logging.info(time.strftime('%H:%M:%S',time.localtime())+": Las palabras son iguales")
             print("Las palabras son iguales")
 
         else:
@@ -57,8 +57,9 @@ def Compare():
 def choice():
     print("Selccione una Opcion\n")
     print("1- Agregar Elementos a la pila\n")
-    print("2-Mostrar elementos de la pila\n")
-    print("3-Comparar elementos de la pila\n")
+    print("2-Comparar elementos de la pila\n")
+    print("3-Mostrar elementos de la pila\n")
+    
     print("4-Eliminar elemento de una pila\n")
     print("5-Salir\n")
     try:
@@ -87,12 +88,13 @@ def main():
             logging.info(time.strftime('%H:%M:%S',time.localtime())+":Agregando elemento a la pila")
             Stack()
         elif choicee == 2:
+            logging.info(time.strftime('%H:%M:%S',time.localtime())+":Se selecciono la opción de comparar")
+            Compare()
+        elif choicee == 3:
             logging.info(time.strftime('%H:%M:%S',time.localtime())+":Se muestra los elementos de la pila")
             Show()
             logging.info(time.strftime('%H:%M:%S',time.localtime())+":La pila fue mostrada satisfactoriamente")
-        elif choicee == 3:
-            logging.info(time.strftime('%H:%M:%S',time.localtime())+":Se selecciono la opción de comparar")
-            Compare()
+        
         elif choicee == 4:
             Delete()
         elif choicee == 5:
